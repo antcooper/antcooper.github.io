@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Markdown heaven: Mapping the § key to # on a macOS British keyboard
+title: "Markdown heaven: Mapping the § key to # on a macOS British keyboard"
 tags: apple macOS bear
 categories: tech
 ---
