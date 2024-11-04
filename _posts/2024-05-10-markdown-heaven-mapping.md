@@ -24,7 +24,7 @@ To cut a long story short, I followed a couple of simple steps and created a new
 ## Installation and setup
 First open **Finder**, click on the **Go** menu whilst holding down the **option** key to reveal the **library** and drop the file into Library/Keyboard Layouts folder.
 
-![Keyboard Layouts folder](assets/2024-05-10/keyboard-layouts-folder.jpg)
+![Keyboard Layouts folder](/assets/2024-05-10/keyboard-layouts-folder.jpg)
 _Library Keyboard Layouts folder_
 
 To enable this layout, open System Settings and go to Keyboard > Text Input and click the Edit button on Input Sources. On the modal window, click the + at the bottom left to add a new layout. Under English you should see the British Markdown bundle.
