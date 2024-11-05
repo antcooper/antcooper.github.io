@@ -17,7 +17,7 @@ The final stop on this journey was with [Ukelele](https://software.sil.org/ukele
 
 To cut a long story short, I followed a couple of simple steps and created a new British Markdown keyboard bundle that's identical to the standard layout except for swapping out the `§` symbol for`#`. This produced a simple `British markdown.bundle` file, provided as a zip file for your convenience below. After unzipping, if you wish you can right-click to choose _Show Package Contents_ and check it's nothing more than a few text files and an icon.
 
-[British Markdown.bundle](/uploads/2024/british-markdown.zip) (zip)
+[British Markdown.bundle](/uploads/2024-05-10/british-markdown.zip) (zip)
 
 
 ## Installation and setup
