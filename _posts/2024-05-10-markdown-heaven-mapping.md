@@ -23,14 +23,14 @@ To cut a long story short, I followed a couple of simple steps and created a new
 ## Installation and setup
 First open **Finder**, click on the **Go** menu whilst holding down the **option** key to reveal the **Library** and drop the file into `Library/Keyboard Layouts` folder.
 
-![Library / Keyboard Layouts](/uploads/2024/library-keyboard-layouts.jpg)
+![Library / Keyboard Layouts](/uploads/2024-05-10/library-keyboard-layouts.jpg)
 *Library / Keyboard Layouts folder*
 
 To enable this layout, open **System Settings** and go to **Keyboard > Text Input** and click the Edit button on **Input Sources**. On the modal window, click the **+** at the bottom left to add a new layout. Under English you should see the **British Markdown** bundle.
 
 Add this and make sure **Show input menu in menu bar** is enabled. You should now be able to choose between your standard British keyboard and the modified one.
 
-![System Settings > Keyboard Input Sources](/uploads/2024/system-settings-keyboard.jpg)
+![System Settings > Keyboard Input Sources](/uploads/2024-05-10/system-settings-keyboard.jpg)
 *System Settings > Keyboard Input Sources*
 
 ## Conclusion
