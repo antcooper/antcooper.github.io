@@ -2,7 +2,6 @@
 layout: post
 title: "Markdown heaven: Mapping the § key to # on a macOS British keyboard"
 tags: apple macOS bear
-categories: tech
 ---
 
 I've been spending more time in [Bear](https://bear.app/) recently, migrating my old DayOne journal entries into a more portable system... and I've been doing a lot of headings and tagging which means I've been hitting that **#** symbol a lot.
