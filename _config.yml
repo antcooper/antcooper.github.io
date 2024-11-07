@@ -3,7 +3,7 @@ title: Ant Cooper
 author:
   name: Ant Cooper
   email: hello@antcooper.com
-description: "Notes to self"
+timezone: Europe/Isle_of_Man
 
 # Build settings
 remote_theme: jekyll/minima

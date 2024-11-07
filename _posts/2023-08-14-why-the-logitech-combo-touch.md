@@ -5,9 +5,10 @@ tags: apple ipad
 ---
 ### I needed a case for my [new iPad Pro](https://www.antcooper.com/buying-an-m1-ipad-pro-in-2023/) that offered protection for daily use and is still versatile enough for trips overseas where my MacBook will be staying at home as space is limited.
 
-![iPad in Logitech Combo Touch case on an outdoor table](/uploads/2024/ipad-on-an-outdoor-table.jpg)
-
 Although I do need to use a 'proper' computer for work (for now at least), I can manage on my iPad for short periods. I also prefer to use the iPad for non-developer tasks and dislike typing on the glass screen, so wanted a keyboard folio to give maximum flexibility.
+<!-- more -->
+
+![iPad in Logitech Combo Touch case on an outdoor table](/uploads/2024/ipad-on-an-outdoor-table.jpg)
 
 I previously owned an Apple Magic Keyboard and whilst the typing experience was good, using it day to day was awkward. If you need a keyboard that never leaves your desk, then it makes an excellent accessory. The problem comes when you need to take the keyboard with you, but don’t need to use it all the time. Then begins the ridiculous dance of getting the iPad and Magic Keyboard combo out of your bag, unfolding it, and pulling on the magnetically attached tablet, folding up the keyboard with its stiff hinge one-handed and putting that back in your bag. You’re then left with a naked iPad that has no protection and no way to prop it up. The solution is to carry the Apple Smart Folio with you and use that alongside. Unbelievably, I did this a few times and it got ridiculous quickly.
 

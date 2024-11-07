@@ -5,6 +5,7 @@ tags: apple 'apple notes'
 ---
 
 ### Despite still using [Evernote](https://evernote.com/) as my [Second Brain](https://www.buildingasecondbrain.com/), I still use Apple Notes on occasion. While it’s gained more features over the years, one thing that really irritates me is the lack of simple customisation, especially the awful yellow colour of links.
+<!-- more -->
 
 ![Apple Notes with yellow hyperlinks](/uploads/2024/macos-apple-notes-yellow.png)
 

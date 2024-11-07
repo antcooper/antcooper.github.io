@@ -5,9 +5,10 @@ tags: apple ipad
 ---
 ### I recently bought an 11-inch iPad Pro (3rd generation) 2021 edition rather than the new M2 variant, and I think this represents a fantastic deal.
 
-![Working outdoors on the iPad](/uploads/2024/ipad-in-the-garden.jpg)
-
 After selling my iPad Air 4 a while ago and dabbling with a couple of Microsoft Surface products, I decided it was time for another iPad.
+<!-- more -->
+
+![Working outdoors on the iPad](/uploads/2024/ipad-in-the-garden.jpg)
 
 I very nearly bought the darling of YouTubers, an [iPad Mini](https://youtu.be/rxaQ-N6cyhM), but decided that whilst it is certainly more portable and easier to hold one-handed, I still wanted a device that could do more. Even though, despite my previous attempts, I know that an iPad still can’t be a full MacBook replacement. It has reached a point where it is certainly good enough, if not better in some cases, for all my non-developer tasks.
 
@@ -20,14 +21,14 @@ As I ruminated over various models and use cases, I decided the must-haves were:
 
 There have been many articles about the [overlap of the current iPad line up](https://www.macstories.net/news/apple-announces-strange-new-ipad-and-ipad-pro-lineup/) and how [pricing ladders](https://youtu.be/pwHNannxolo) are used to increase spend. There is always that thought that maybe spending another £50 or £100 could be worth it in the long-run. As I worked through the configurator on the Apple website, I was pleasantly surprised when I checked out the [Certified Refurbished](https://www.apple.com/uk/shop/refurbished/ipad) store.
 
----
+----
 
 ### Comparing all models with Wi-Fi and Cellular, 256Gb storage
 - iPad Air 5 — £1,029
 - iPad Pro 11-inch M2 (2022) — £1,199
 - iPad Pro 11-inch M1 (2021) — _£999_  **Sale Price £849**
 
----
+----
 
 It’s notable that along with the new iPad releases in 2022 came a price-hike across the line-up, no doubt down to supply chain issues and also not helped in the UK by the weak British Pound at the time. The Certified Refurb store offers a flat 15% discount based on the original release price, which represents a massive saving in real terms.
 
