@@ -1,11 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body {
-  font-family: 'Atkinson Hyperlegible', sans-serif;
+	font-family: 'Atkinson Hyperlegible', sans-serif;
 }
 p + h2 {
   margin-top: 2rem !important;
 }
 h1, h2, h3 {
 	font-weight: 600;
+}
+
+.site-header {
+	border-top: none;
+	
+	.site-title {
+		font-size: 1.2rem;
+		font-weight: 600;
+	}
 }
