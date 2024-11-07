@@ -4,6 +4,7 @@ author:
   name: Ant Cooper
   email: hello@antcooper.com
 timezone: Europe/Isle_of_Man
+excerpt_separator: '<!-- more -->'
 
 # Build settings
 remote_theme: jekyll/minima
