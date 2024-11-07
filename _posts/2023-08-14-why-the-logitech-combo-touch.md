@@ -5,7 +5,7 @@ tags: apple ipad
 ---
 ### I needed a case for my [new iPad Pro](https://www.antcooper.com/buying-an-m1-ipad-pro-in-2023/) that offered protection for daily use and is still versatile enough for trips overseas where my MacBook will be staying at home as space is limited.
 
-![iPad in Logitech Combo Touch case on an outdoor table](/uploads/2024/ipad-on-an-outdoor-table.jpeg)
+![iPad in Logitech Combo Touch case on an outdoor table](/uploads/2024/ipad-on-an-outdoor-table.jpg)
 
 Although I do need to use a 'proper' computer for work (for now at least), I can manage on my iPad for short periods. I also prefer to use the iPad for non-developer tasks and dislike typing on the glass screen, so wanted a keyboard folio to give maximum flexibility.
 
