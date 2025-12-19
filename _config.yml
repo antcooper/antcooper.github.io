@@ -4,6 +4,7 @@ author:
   name: Ant Cooper
   email: hello@antcooper.com
 description: "Craft CMS and Cyber Security things. Runner of mountains and rider of bicycles. World Tin Bath Championship finalist."
+permalink: pretty
 
 # Build settings
 remote_theme: jekyll/minima
