@@ -2,7 +2,7 @@
 layout: post
 title: "Printing straight into Evernote on macOS"
 date: 2025-12-08 13:00:00 -0000
-categories: evernote
+tags: evernote
 ---
 If you're an Evernote user on macOS, you might find yourself wanting to print documents or web pages directly into Evernote for easy organization and access later. Here's how to set it up:
 
