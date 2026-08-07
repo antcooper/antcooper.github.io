@@ -91,7 +91,11 @@ h1, h2, h3, h4 {
   font-family: var(--font-heading);
   font-weight: 500;
   line-height: 1.25;
-  text-wrap: balance;
+  /* The CSS-native widont: fills each line, then only intervenes to stop a
+     single word being left alone on the last one. `balance` instead evens
+     out every line, which makes long titles look like they wrap early.
+     Where unsupported this falls back to normal wrapping. */
+  text-wrap: pretty;
 }
 
 .skip-link {
