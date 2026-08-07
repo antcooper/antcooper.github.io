@@ -10,10 +10,5 @@ export default {
     email: "hello@antcooper.com",
   },
   avatar: "/assets/images/avatar.jpg",
-  // Shown as the button at the top right. Set to null to remove it.
-  cta: {
-    text: "Also on Micro.blog",
-    url: "https://micro.blog/antcooper",
-  },
   buildYear: new Date().getFullYear(),
 };
