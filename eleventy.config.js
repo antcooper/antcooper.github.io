@@ -9,6 +9,8 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets/images");
   eleventyConfig.addPassthroughCopy("assets/files");
   eleventyConfig.addPassthroughCopy("assets/css");
+  // CNAME is added at the point antcooper.com's DNS is switched over —
+  // see "Going live on antcooper.com" in the README.
   eleventyConfig.addPassthroughCopy("CNAME");
   eleventyConfig.addPassthroughCopy("robots.txt");
 

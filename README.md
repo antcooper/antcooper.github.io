@@ -95,8 +95,40 @@ dependencies, runs the Eleventy build, and uploads `_site/` to GitHub Pages.
 If a build ever fails, the previous version of the site stays up and the
 Actions tab will show what went wrong.
 
-`CNAME` holds the custom domain. Don't delete it — GitHub Pages reads that file
-to know the site answers to `antcooper.com`.
+## Going live on antcooper.com
+
+The site currently publishes to <https://antcooper.github.io/>. `antcooper.com`
+still points at micro.blog, and nothing here affects it until you change DNS.
+
+The custom domain is deliberately **not** set yet: as soon as GitHub Pages knows
+about it, the `github.io` address starts redirecting there — which would leave
+you unable to preview. So the switch is one step, done when you're ready:
+
+1. At your DNS provider, point `antcooper.com` at GitHub Pages. Four `A` records
+   on the apex:
+
+   ```
+   185.199.108.153
+   185.199.109.153
+   185.199.110.153
+   185.199.111.153
+   ```
+
+   And a `CNAME` for `www` pointing to `antcooper.github.io`.
+
+2. Add a file called `CNAME` in the root of this repository containing exactly:
+
+   ```
+   antcooper.com
+   ```
+
+   Commit and push it. The build already knows to copy that file through, and
+   GitHub Pages picks up the domain from it.
+
+3. In the repo's **Settings → Pages**, tick *Enforce HTTPS* once the certificate
+   has been issued (usually within an hour).
+
+Until step 2 happens, `antcooper.github.io` serves the site normally.
 
 ## URLs and redirects
 

@@ -7,7 +7,7 @@ export default {
   language: "en-GB",
   author: {
     name: "Ant Cooper",
-    email: "antjcooper@gmail.com",
+    email: "hello@antcooper.com",
   },
   avatar: "/assets/images/avatar.jpg",
   // Shown as the button at the top right. Set to null to remove it.
