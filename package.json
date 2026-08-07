@@ -1,0 +1,19 @@
+{
+  "name": "antcooper.com",
+  "version": "1.0.0",
+  "description": "Ant Cooper's blog — markdown in, static site out.",
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "clean": "rm -rf _site .cache"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "@11ty/eleventy-img": "^7.0.0",
+    "@11ty/eleventy-plugin-rss": "^3.0.0",
+    "luxon": "^3.7.2"
+  }
+}

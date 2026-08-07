@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="{{ site.language }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if title and page.url != "/" %}{{ title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+  {% set metaDesc = description or site.description %}
+  <meta name="description" content="{{ metaDesc | striptags }}">
+  <meta name="author" content="{{ site.author.name }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+  <meta property="og:type" content="{% if layout == 'post.njk' %}article{% else %}website{% endif %}">
+  <meta property="og:title" content="{{ title or site.title }}">
+  <meta property="og:description" content="{{ metaDesc | striptags }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  {% if image %}<meta property="og:image" content="{{ site.url }}{{ image }}">{% endif %}
+  <meta name="twitter:card" content="{% if image %}summary_large_image{% else %}summary{% endif %}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}/feed.xml">
+  <link rel="alternate" type="application/json" title="{{ site.title }}" href="{{ site.url }}/feed.json">
+  <link rel="icon" href="{{ site.avatar }}">
+  {% if site.cta %}<link rel="me" href="{{ site.cta.url }}">{% endif %}
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="site-title" href="/">
+      <img src="{{ site.avatar }}" alt="" width="30" height="30" eleventy:ignore>
+      <span>{{ site.title }}</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="/about/"{% if page.url == "/about/" %} aria-current="page"{% endif %}>About</a>
+      <a href="/archive/"{% if page.url == "/archive/" %} aria-current="page"{% endif %}>Archive</a>
+      {% if site.cta %}<a class="cta" href="{{ site.cta.url }}" rel="me">{{ site.cta.text }}</a>{% endif %}
+    </nav>
+  </header>
+
+  <main id="main">
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer">
+    <p>© {{ site.buildYear }} {{ site.author.name }}</p>
+    <p class="feeds">
+      <a href="/feed.xml">RSS</a>
+      <a href="/feed.json">JSON Feed</a>
+    </p>
+  </footer>
+</body>
+</html>
