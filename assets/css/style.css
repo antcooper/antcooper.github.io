@@ -329,8 +329,11 @@ main {
   margin-bottom: 2rem;
 }
 
+/* The top margin collapses with whatever sits above — the title on a
+   listing, the meta line on a post page — so both get the same breathing
+   room without needing to be set separately. */
 .post-hero {
-  margin: 0 0 2rem;
+  margin: 2.5rem 0 2rem;
 }
 
 .post-hero img {
