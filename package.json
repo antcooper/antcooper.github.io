@@ -7,7 +7,7 @@
   "private": true,
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy",
+    "build": "rm -rf _site && eleventy",
     "clean": "rm -rf _site .cache"
   },
   "devDependencies": {
