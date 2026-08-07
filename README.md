@@ -70,6 +70,7 @@ Downloadable files (zips, PDFs) go in `assets/files/`.
 | Site title, description, nav button | `_data/site.js` |
 | Page structure | `_layouts/base.njk`, `post.njk`, `page.njk` |
 | The home page listing | `index.njk` |
+| How many posts per page | `size: 3` in `index.njk`'s front matter |
 | About text | `pages/about.md` |
 | Build behaviour | `eleventy.config.js` |
 

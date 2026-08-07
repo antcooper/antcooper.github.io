@@ -1,22 +1,61 @@
 ---
 layout: base.njk
-permalink: /
+pagination:
+  data: collections.posts
+  size: 3
+  alias: posts
+permalink: "{% if pagination.pageNumber == 0 %}/{% else %}/page/{{ pagination.pageNumber + 1 }}/{% endif %}"
+eleventyComputed:
+  title: "{% if pagination.pageNumber > 0 %}Page {{ pagination.pageNumber + 1 }}{% endif %}"
 ---
-<ul class="post-list">
-  {% for post in collections.posts %}
-    <li class="post-list-item h-entry">
-      <p class="post-meta">
-        <time class="dt-published" datetime="{{ post.date | machineDate }}">{{ post.date | readableDate }}</time>
-      </p>
-      <h2 class="p-name"><a class="u-url" href="{{ post.url }}">{{ post.data.title }}</a></h2>
-      {% if post.data.description %}
-        <p class="p-summary">{{ post.data.description }}</p>
-      {% endif %}
+{% for post in posts %}
+  <article class="post-list-item h-entry">
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ post.date | machineDate }}">{{ post.date | readableDate }}</time>
+    </p>
+
+    <h2 class="p-name"><a class="u-url" href="{{ post.url }}">{{ post.data.title }}</a></h2>
+
+    {% if post.data.image %}
+      <figure class="post-hero">
+        <img src="{{ post.data.image }}" alt="{{ post.data.imageAlt or '' }}"
+             {% if loop.first %}loading="eager" decoding="sync" fetchpriority="high"{% endif %}>
+      </figure>
+    {% endif %}
+
+    {% if post.data.description %}
+      <p class="post-standfirst p-summary">{{ post.data.description }}</p>
+    {% endif %}
+
+    <div class="post-body e-content">
+      {{ post.templateContent | safe }}
+    </div>
+
+    <p class="post-list-footer">
       {% if post.data.tags %}
-        <p class="tag-list">
+        <span class="tag-list">
           {%- for tag in post.data.tags %}<a class="tag" href="/tags/{{ tag | slugify }}/">{{ tag }}</a>{% endfor -%}
-        </p>
+        </span>
       {% endif %}
-    </li>
-  {% endfor %}
-</ul>
+      <a class="permalink" href="{{ post.url }}">Permalink</a>
+    </p>
+  </article>
+{% endfor %}
+
+{% if pagination.pages | length > 1 %}
+  <nav class="pagination" aria-label="Pagination">
+    {% if pagination.href.previous %}
+      <a class="prev" href="{{ pagination.href.previous }}">← Newer posts</a>
+    {% else %}
+      <span class="prev"></span>
+    {% endif %}
+
+    <span class="pagination-count">Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages | length }}</span>
+
+    {% if pagination.href.next %}
+      <a class="next" href="{{ pagination.href.next }}">Older posts →</a>
+    {% else %}
+      <span class="next"></span>
+    {% endif %}
+  </nav>
+{% endif %}

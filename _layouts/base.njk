@@ -9,6 +9,8 @@
   <meta name="description" content="{{ metaDesc | striptags }}">
   <meta name="author" content="{{ site.author.name }}">
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  {% if pagination.href.previous %}<link rel="prev" href="{{ site.url }}{{ pagination.href.previous }}">{% endif %}
+  {% if pagination.href.next %}<link rel="next" href="{{ site.url }}{{ pagination.href.next }}">{% endif %}
 
   <meta property="og:type" content="{% if layout == 'post.njk' %}article{% else %}website{% endif %}">
   <meta property="og:title" content="{{ title or site.title }}">
