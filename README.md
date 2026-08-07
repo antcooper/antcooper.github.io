@@ -41,6 +41,8 @@ The post itself starts here, in normal markdown.
 | `image` | no | A banner image shown above the post, e.g. `/assets/images/photo.jpg`. |
 | `imageAlt` | no | Alt text describing the banner image. |
 | `redirectFrom` | no | Old URLs that should forward here. Used for the micro.blog addresses. |
+| `featured` | no | Set to `true` to pin this post as the yellow note at the top of the home page. If more than one post is marked, the newest wins. |
+| `featuredNote` | no | Short line shown on that note. Falls back to `description`, which is usually too long for it. |
 
 > **Careful with `#` and `:`** — if a title or description contains either, wrap
 > the whole value in double quotes, or YAML will misread it:

@@ -4,6 +4,8 @@ description: Apple Notes has gained plenty of features over the years, but not s
 date: 2023-09-22
 image: /assets/images/macos-apple-notes-yellow.png
 imageAlt: Apple Notes on macOS showing links in its default yellow
+featured: true
+featuredNote: Fixing that eye-watering link yellow on macOS, iOS and iPadOS.
 tags:
   - Apple
   - Apple Notes

@@ -16,6 +16,8 @@
   --accent: #f29c38;           /* amber, used for hover and focus states */
   --highlight: #fcdae9;        /* the pink underline behind links        */
   --highlight-hover: #efefef;
+  --postit: #fdf0a4;           /* the featured note at the top of the home page */
+  --postit-ink: #2c2a1c;
 
   --page-width: 54rem;         /* the panel; 40rem of text once padded */
   --page-pad: 4rem;
@@ -36,6 +38,9 @@
     --rule: #2e2e35;
     --highlight: #7d3f5c;
     --highlight-hover: #33333c;
+    /* Still recognisably a post-it, just dimmed so it doesn't glare. */
+    --postit: #d9c96b;
+    --postit-ink: #24220f;
   }
 }
 
@@ -148,6 +153,59 @@ h1, h2, h3, h4 {
 
 main {
   padding: 1rem 0 4rem;
+}
+
+/* --------------------------------------------------------- featured note -- */
+
+/* A post-it stuck to the top of the home page. The slight tilt and the
+   heavier shadow along the bottom edge are what sell the paper look. */
+.featured-note {
+  position: relative;
+  margin: 0 0 4rem;
+  padding: 1.5rem 1.75rem 1.75rem;
+  background: var(--postit);
+  color: var(--postit-ink);
+  border-radius: 3px 3px 12px 12px;
+  transform: rotate(-0.8deg);
+  box-shadow:
+    0 1px 2px rgb(0 0 0 / 0.10),
+    0 10px 22px -10px rgb(0 0 0 / 0.22);
+  transition: transform 0.35s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.featured-note:hover {
+  transform: rotate(0deg);
+}
+
+.featured-label {
+  margin: 0 0 0.35rem;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  opacity: 0.6;
+}
+
+.featured-note h2 {
+  margin: 0;
+  font-size: 1.375rem;
+  line-height: 1.3;
+}
+
+.featured-note h2 a {
+  text-decoration: none;
+  box-shadow: inset 0 -2px 0 rgb(0 0 0 / 0.25);
+  transition: box-shadow 0.35s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.featured-note h2 a:hover {
+  box-shadow: inset 0 -1.5em 0 rgb(255 255 255 / 0.45);
+}
+
+.featured-blurb {
+  margin: 0.6rem 0 0;
+  font-size: 0.9375rem;
+  opacity: 0.85;
 }
 
 /* ------------------------------------------------------------ home list -- */

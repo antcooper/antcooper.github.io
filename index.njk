@@ -8,6 +8,18 @@ permalink: "{% if pagination.pageNumber == 0 %}/{% else %}/page/{{ pagination.pa
 eleventyComputed:
   title: "{% if pagination.pageNumber > 0 %}Page {{ pagination.pageNumber + 1 }}{% endif %}"
 ---
+{# Pinned to the first page only — it would read oddly halfway through. #}
+{% if pagination.pageNumber == 0 and collections.featured | length %}
+  {% set feature = collections.featured[0] %}
+  <aside class="featured-note">
+    <p class="featured-label">Featured</p>
+    <h2><a href="{{ feature.url }}">{{ feature.data.title }}</a></h2>
+    {% if feature.data.featuredNote or feature.data.description %}
+      <p class="featured-blurb">{{ feature.data.featuredNote or feature.data.description }}</p>
+    {% endif %}
+  </aside>
+{% endif %}
+
 {% for post in posts %}
   <article class="post-list-item h-entry">
     <p class="post-meta">

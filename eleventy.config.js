@@ -9,6 +9,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets/images");
   eleventyConfig.addPassthroughCopy("assets/files");
   eleventyConfig.addPassthroughCopy("assets/css");
+  eleventyConfig.addPassthroughCopy("assets/favicon");
   // CNAME is added at the point antcooper.com's DNS is switched over —
   // see "Going live on antcooper.com" in the README.
   eleventyConfig.addPassthroughCopy("CNAME");
@@ -41,6 +42,15 @@ export default function (eleventyConfig) {
   // --- Collections --------------------------------------------------------
   eleventyConfig.addCollection("posts", (collection) =>
     collection.getFilteredByGlob("posts/*.md").sort((a, b) => b.date - a.date)
+  );
+
+  // Posts marked `featured: true`. The newest one becomes the note pinned to
+  // the top of the home page.
+  eleventyConfig.addCollection("featured", (collection) =>
+    collection
+      .getFilteredByGlob("posts/*.md")
+      .filter((post) => post.data.featured)
+      .sort((a, b) => b.date - a.date)
   );
 
   // Every tag used across all posts, alphabetically, for the tag pages.
