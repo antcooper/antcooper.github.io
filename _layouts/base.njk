@@ -22,7 +22,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+  {# Rubik for headings. Inter is the body fallback for non-Apple platforms;
+     macOS and iOS resolve -apple-system first and never download it. #}
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400..600;1,400..600&family=Rubik:wght@400..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
 
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}/feed.xml">
